@@ -1,12 +1,10 @@
-a=int(input())
-f=0
-s=1
-if a<=0:
-    print("The requested series is",f)
-else:
-    print(f,s,end=' ')
-    for x in range(2,a):
-        next=f+s
-        print(next,end=' ')
-        f=s
-        s=next
+n=int(input())
+a=0
+b=1
+print(a,end=' ')
+print(b,end=' ')
+for i in range(2,n):
+    c=a+b
+    print(c,end=' ')
+    a=b
+    b=c
