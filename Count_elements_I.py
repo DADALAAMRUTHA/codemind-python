@@ -1,10 +1,9 @@
-a,b=map(int,input().split())
+n,m=map(int,input().split())
 l=list(map(int,input().split()))
-m=list(map(int,input().split()))
-k=[]
-c=0
-c=0
-for i in range(a):
-    if l[i] in m:
-        k.append(l[i])
-print(len(set(k)))
+ll=list(map(int,input().split()))
+a=[]
+for i in l:
+    if i in ll:
+        if i not in a:
+            a.append(i)
+print(len(a))
