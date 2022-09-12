@@ -1,5 +1,10 @@
 n=int(input())
-a=list(map(int,input().split()))
-for i in range(n):
-    k=str(abs(a[i]))
-    print(len(k),end=" ")
+l=list(map(str,input().split()))
+a=[]
+for i in l:
+    le=0
+    for char in i:
+        if char!='-':
+            le+=1
+    a.append(le)
+print(*a)
