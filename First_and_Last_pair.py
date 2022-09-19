@@ -1,16 +1,18 @@
 n=int(input())
-a=list(map(int,input().split()))
-s=[]
-if n%2!=0:
-    for i in range(0,n//2+1):
-        if a[i]!=a[n-1-i]:
-            s.append(a[i])
-            s.append(a[n-1-i])
-        else:
-            s.append(a[i])
-            s.append(0)
-else:
-    for i in range(0,n//2):
-        s.append(a[i])
-        s.append(a[n-1-i])
-print(*s)
+l=list(map(int,input().split()))
+a=[]
+b=[]
+c=[]
+k=n//2
+if n%2==1:
+    k+=1
+for i in range(k):
+    a.append(l[i])
+for i in range(n-1,k-1,-1):
+    b.append(l[i])
+if n%2==1:
+    b.append(0)
+for i in range(k):
+    c.append(a[i])
+    c.append(b[i])
+print(*c)
