@@ -1,14 +1,14 @@
 n=int(input())
-a=list(map(int,input().split()))
-b,c=map(int,input().split())
-s=[]
-for i in range(b,c+1):
-    s.append(i)
-d=[]
-for j in a:
-    if j not in s:
-        d.append(j)
-if len(d)>0:
-    print(min(d))
+l=list(map(int,input().split()))
+a,b=map(int,input().split())
+mi=99
+c=0
+for i in range(n):
+    if l[i]<a or l[i]>b:
+        if l[i]<mi:
+            mi=l[i]
+            c+=1
+if c==0:
+    print("-1")
 else:
-    print('-1')
+    print(mi)
