@@ -1,8 +1,9 @@
 n=int(input())
-a=list(map(int,input().split()))
+l=list(map(int,input().split()))
+j=n-1
 s=0
-p=0
 for i in range(n):
-    s=s+(2**p)*a[n-i-1]
-    p=p+1
+    if j>=0:
+        s=s+(l[i]*(2**j))
+        j-=1
 print(s)
