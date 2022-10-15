@@ -1,13 +1,15 @@
-s1=input()
-s2=input()
-#print(s1)
-#print(s2)
-s1=s1.lower()
-s2=s2.lower()
-s3=s1.split()
-s4=s2.split()
-k=[]
-for i in s4:
-    if i in s3:
-        k.append(i)
-print(*k)
+l=list(map(str,input().split()))
+ll=[]
+ll1=[]
+for i in l:
+    ll.append(i.lower())
+l1=list(map(str,input().split()))
+for i in l1:
+    ll1.append(i.lower())
+    s=[]
+    
+for i in ll1:
+    if i in ll:
+        if i not in s:
+            s.append(i)
+print(*s)
