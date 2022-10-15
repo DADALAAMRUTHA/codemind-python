@@ -1,9 +1,9 @@
 n=input()
-n1=n.lower()
-s=''
-for i in n1:
-    if i not in s and ord(i)!=32:
-        s=s+i
-k=list(s)
-k.sort()
-print(len(k))
+n=n.lower()
+a=[]
+for i in range(len(n)):
+    if n[i]!=' ':
+        a.append(n[i])
+a=list(set(a))
+a.sort()
+print(len(a))
