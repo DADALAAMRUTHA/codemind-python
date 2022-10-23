@@ -1,3 +1,2 @@
-a=input()
-b=list(a)
-print(len(b))
+l=input()
+print(len(l))
