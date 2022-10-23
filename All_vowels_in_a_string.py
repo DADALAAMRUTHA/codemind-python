@@ -1,11 +1,17 @@
 n=input()
-k='aeiou'
-p=[]
-c=0
-for i in n:
-    if i  in k and i not in p:
-        p.append(i)
-if len(p)==5:
-    print("True")
-else:
+aa=ee=ii=oo=uu=0
+for p in n:
+    if p=='a':
+        aa+=1
+    elif p=='e':
+        ee+=1
+    elif p=='o':
+        oo+=1
+    elif p=='i':
+        ii+=1
+    elif p=='u':
+        uu+=1
+if aa==0 or ee==0 or ii==0 or oo==0 or uu==0:
     print("False")
+else:
+    print("True")
