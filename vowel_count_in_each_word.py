@@ -1,10 +1,10 @@
-n=input()
-k='aeiou'
-c=0
-s=n.split()
-for i in s:
-    for j in i:
-        if j in k:
-            c=c+1
-    print(c,end=' ')
+s="aeiouAEIOU"
+l=list(map(str,input().split()))
+a=[]
+for i in range(len(l)):
     c=0
+    for j in l[i]:
+        if j in s:
+            c+=1
+    a.append(c)
+print(*a)
