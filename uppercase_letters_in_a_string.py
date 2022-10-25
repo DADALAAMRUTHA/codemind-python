@@ -1,6 +1,7 @@
-n=input()# 97-122
+n=input()
 c=0
 for i in n:
-    if ord(i)>=65 and ord(i)<=90:
-        c=c+1
+    if i.isupper():
+        c+=1
 print(c)
+        
