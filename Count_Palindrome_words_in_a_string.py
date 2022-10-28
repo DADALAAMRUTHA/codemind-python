@@ -1,10 +1,7 @@
-n=input()
-n1=n.lower()
-s=n1.split()
+l=list(map(str,input().split()))
 c=0
-for i in s:
-    k=i
-    p=i[::-1]
-    if k==p:
-        c=c+1
-print(c) 
+for i in l:
+    i=i.lower()
+    if i==i[::-1]:
+        c+=1
+print(c)
